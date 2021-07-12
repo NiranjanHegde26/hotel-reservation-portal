@@ -1,0 +1,28 @@
+.img{
+  background-image: url(C:\Angular\NewOne\HotelApp\src\assets\img\login-image.jpg);
+  
+  background-repeat: no-repeat;
+}
+.container{
+  min-height: 700px;
+  //min-width: 1400px;
+}
+
+.content{
+  padding-top: 130px;
+}
+
+.card{
+  width: 500px;
+  
+  text-align: left;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+}
+
+.btn:hover{
+  background-color: rgb(226, 225, 228);
+  color:rgb(64, 60, 66);
+}
+

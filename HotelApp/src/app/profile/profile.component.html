@@ -1,0 +1,92 @@
+<div class="column"><br>
+  <h2 class="text-center" style="font-family: 'Times New Roman', Times, serif; color: antiquewhite;">Welcome {{details?.first_name}}</h2><br><br><br>
+  <div class="container">
+    <div class="card mx-auto" style="width: 500px;">
+      <h3 class="card-title text-center">User Details</h3>
+
+      <div class="card-body mx-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">User Name</th>
+              <td>{{details?.first_name}}</td>
+            </tr>
+            <tr>
+              <th scope="row">User ID</th>
+              <td>{{details?.id}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Email ID</th>
+              <td>{{details?.email}}</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container" style="padding-bottom: 50px;">
+      <div class="accordion" id="accordionExample">
+        <div class="card w-50  mx-auto">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0 ">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 23px;">
+                Book Single Rooms
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+               <app-single-room></app-single-room>
+            </div>
+          </div>
+        </div>
+        <div class="card w-50  mx-auto">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0 ">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 23px;">
+                Book Deluxe Rooms
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+               <app-deluxe-room></app-deluxe-room>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="card w-50  mx-auto">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0 ">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 23px;">
+                  Booking Status
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                 <app-user-history></app-user-history>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+
+    </div>
+
+    </div>
+  </div>
+
+
+
+

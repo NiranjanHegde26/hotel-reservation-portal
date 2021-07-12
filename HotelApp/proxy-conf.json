@@ -1,0 +1,38 @@
+{
+    "/users": {
+      "target": "http://localhost:3000",
+      "secure": false
+    },
+    "/SingleRooms":{
+      "target": "http://localhost:3000",
+      "secure": false
+    },
+    "/DeluxeRooms":{
+      "target": "http://localhost:3000",
+      "secure": false
+    },
+    "/Single-Rooms":{
+      "target": "http://localhost:3000",
+      "secure": false
+
+    },
+    "/Deluxe-Rooms":{
+      "target": "http://localhost:3000",
+      "secure": false
+    },
+    "/Single-history":{
+      "target": "http://localhost:3000",
+      "secure": false
+    },
+    "/History":{
+      "target": "http://localhost:3000",
+      "secure": false
+    },
+    "/Edit":{
+      "target": "http://localhost:3000",
+      "secure": false
+      
+    }
+
+  }
+

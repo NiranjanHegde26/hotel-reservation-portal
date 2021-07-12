@@ -1,0 +1,48 @@
+<p>
+  <button class="btn btn-primary" data-toggle="collapse" type="submit" (click)="history()" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Single Room Status
+  </button>
+  <button class="btn btn-primary" data-toggle="collapse" type="submit" (click)="DHistory()" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Deluxe Room Status
+  </button>
+ </p>
+
+ <br>
+   <div class="card card-body">
+     
+    <table class="table">
+   
+      <tbody>
+        <tr>
+          <th scope="row">Type of Room:</th>
+          <td>{{type}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Transcation ID:</th>
+          <td>{{t_id}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Hotel Booked:</th>
+          <td>{{hotelName}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Rooms Reserved:</th>
+          <td>{{RoomNo}}</td>
+        </tr>
+        <tr>
+         <th scope="row">Total Amount Paid:</th>
+         <td>{{total}}</td>
+       </tr>
+       <tr>
+         <th scope="row">Booked On:</th>
+         <td>{{book|date:"dd/MM/yyyy"}}</td>
+       </tr>
+       <tr>
+         <th scope="row">Transcation Status:</th>
+         <td>{{status}}</td>
+       </tr>
+      </tbody>
+    </table>
+   </div>
+  
+ 

@@ -1,0 +1,53 @@
+
+    <form class="mx-auto"  (submit)="book()">
+        
+        <div class="form-group col-md-8 ">
+            <label for="u_id">User ID</label>
+            <input type="text" name="u_id" class="form-control" id="u_id" [(ngModel)]="credentials.u_id">
+        </div>
+        <div class="form-group col-md-8 ">
+            <label for="drh_name">Hotel of Your Choice</label>
+            <select name="drh_name" class="form-control" id="drh_name" [(ngModel)]="credentials.drh_name"  >
+                <option selected>Choose...</option>
+                <option value="1">Taj Westend</option>
+                <option value="2">ITC Group</option>
+                <option value="3">Orchid</option>
+                <option value="4">Sheraton</option>
+              </select>
+        </div>
+        <div class="form-group col-md-8">
+            <label for="no_of_rooms">No. of Rooms</label>
+            <select name="no_of_rooms" class="form-control" id="no_of_rooms"  [(ngModel)]="credentials.no_of_rooms" >
+                <option selected>Choose...</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+              </select>
+          </div>
+         
+    
+    <div class="form-group col-md-8">
+      <label for="check_in">Check In Date</label>
+      <input type="text" name="check_in" class="form-control" id="check_in" placeholder="yyyy-mm-dd" [(ngModel)]="credentials.check_in">
+    </div>
+    <div class="form-group col-md-8">
+        <label for="check_out">Check Out Date</label>
+        <input type="text" name="check_out" class="form-control" id="check_out" placeholder="yyyy-mm-dd" [(ngModel)]="credentials.check_out">
+    </div>
+    <div class="form-group col-md-8">
+        <label for="total_days">Total No.of Days</label>
+        <input  type="text" name="total_days" class="form-control" id="total_days" value="{{days()}}" placeholder="Total Days.."   [(ngModel)]="credentials.total_days" readonly >
+    </div>
+
+    <div class="form-group col-md-8">
+        <label for="total">Total Amount to be Paid</label>
+        <input   type="text" name="total" class="form-control" id="total" placeholder="Total Amount.."  value="{{calculate()}}" [(ngModel)]="credentials.total" readonly>
+
+    </div>
+    
+    
+        <button  type="submit"  class="btn btn-primary btn-block"   [disabled]=" !datesValid()">Continue</button>
+   
+</form>
+
