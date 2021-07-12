@@ -1,7 +1,10 @@
   
 const Sequelize = require('sequelize')
 const db = {}
-const sequelize = new Sequelize('hotelapp', 'root', '123', {
+db_name = '' //Enter your DB Name
+db_user = '' //Enter your DB User Name
+db_pwd = '' //Enter your DB Password
+const sequelize = new Sequelize(db_name, db_user, db_pwd, {
   host: 'localhost',
   dialect: 'mysql',
   operatorsAliases: false,
